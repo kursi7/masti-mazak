@@ -1,0 +1,132 @@
+1. Write a Python program to convert temperatures to and from Celsius and Fahrenheit.
+[ Formula : x+32 [ where c = temperature in celsius and f = temperature in fahrenheit ]
+2. Print first 10 numbers using a for loop
+for num in range(10):
+    print(num)
+3. Print sum of all even numbers from 10 to 20
+ sum = 0
+for i in range(10, 21, 2):
+    sum = sum + i
+print(sum)
+4. Print First 10 natural numbers using while loop
+I=1
+While i<=10:
+	print(i)
+	i=i+1
+
+5. program to calculate addition of two input integer numbers
+
+# convert input into int
+first_number = int(input("Enter first number "))
+second_number = int(input("Enter second number "))
+
+print("\n")
+print("First Number:", first_number)
+print("Second Number:", second_number)
+sum1 = first_number + second_number
+print("Addition of two number is: ", sum1)
+
+6.  Python if Statement
+# check if number is positive or negative
+number=int(input(“enter a no”))
+if number > 0:
+print('Number is positive.')
+else:
+print('Number is negative’)
+7. Python if …elif…Statement
+number=int(input(“enter a no”))
+if number > 0:
+	print("Positive number")
+elif number == 0:
+	print('Zero')
+else:
+	print('Negative number')
+8. Python while Loop
+# program to display numbers from 1 to 5
+# initialize the variable
+i =1
+# while loop from i = 1 to 5
+while i <= 5:
+	print(i)
+	i = i + 1
+
+
+
+DATA SCIENCE-DATA VISUALISATION
+
+1.Draw a line chart in a diagram from position (1, 3) to position (8, 10):
+import matplotlib.pyplot as plt
+import numpy as np
+
+xpoints = np.array([1, 8])
+ypoints = np.array([3, 10])
+
+plt.plot(xpoints, ypoints)
+plt.show()
+
+
+2.Create TITLE & Labels for a Plot
+With Pyplot, you can use the xlabel() and ylabel() functions to set a label for the x- and y-axis.
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.array([80, 85, 90, 95, 100, 105, 110, 115, 120, 125])
+y = np.array([240, 250, 260, 270, 280, 290, 300, 310, 320, 330])
+
+plt.plot(x, y)
+
+plt.title(“Line Chart”)
+plt.xlabel("Average Pulse")
+plt.ylabel("Calorie Burnage")
+
+plt.show()
+
+Creating Scatter chart
+3.import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.array([5,7,8,7,2,17,2,9,4,11,12,9,6])
+y = np.array([99,86,87,88,111,86,103,87,94,78,77,85,86])
+
+plt.scatter(x, y)
+plt.show()
+4. Creating Bars
+With Pyplot, you can use the bar() function to draw bar graphs:
+Example 
+Draw 4 bars:
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.array(["A", "B", "C", "D"])
+y = np.array([3, 8, 1, 10])
+
+plt.bar(x,y)
+plt.show()
+
+
+5. Creating Pie Charts
+With Pyplot, you can use the pie() function to draw pie charts:
+Example 
+A simple pie chart:
+import matplotlib.pyplot as plt
+import numpy as np
+
+y = np.array([35, 25, 25, 15])
+
+plt.pie(y)
+plt.show() 
+
+Labels
+Add labels to the pie chart with the label parameter.
+The label parameter must be an array with one label for each wedge:
+Example
+A simple pie chart:
+import matplotlib.pyplot as plt
+import numpy as np
+
+y = np.array([35, 25, 25, 15])
+mylabels = ["Apples", "Bananas", "Cherries", "Dates"]
+
+plt.pie(y, labels = mylabels)
+plt.show() 
+
